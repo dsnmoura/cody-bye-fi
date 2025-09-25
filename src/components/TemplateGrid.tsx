@@ -31,7 +31,7 @@ const TemplateGrid = () => {
 
   const handleCustomize = (template: typeof templates[0]) => {
     setSelectedTemplate(template);
-    navigate('/dashboard/create');
+    navigate(`/dashboard/customize-template/${template.id}`);
   };
 
   return (

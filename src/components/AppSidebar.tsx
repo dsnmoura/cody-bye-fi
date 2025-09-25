@@ -8,7 +8,8 @@ import {
   Settings,
   Sparkles,
   Users,
-  TrendingUp
+  TrendingUp,
+  Palette
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -34,6 +35,7 @@ const mainItems = [
 ];
 
 const secondaryItems = [
+  { title: "Marca", url: "/dashboard/brand-settings", icon: Palette },
   { title: "Configurações", url: "/dashboard/settings", icon: Settings },
 ];
 

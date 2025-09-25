@@ -14,6 +14,8 @@ import Templates from "./pages/dashboard/Templates";
 import Schedule from "./pages/dashboard/Schedule";
 import Analytics from "./pages/dashboard/Analytics";
 import Settings from "./pages/dashboard/Settings";
+import BrandSettings from "./pages/dashboard/BrandSettings";
+import CustomizeTemplate from "./pages/dashboard/CustomizeTemplate";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +36,8 @@ const App = () => (
               <Route path="schedule" element={<Schedule />} />
               <Route path="analytics" element={<Analytics />} />
               <Route path="settings" element={<Settings />} />
+              <Route path="brand-settings" element={<BrandSettings />} />
+              <Route path="customize-template/:templateId" element={<CustomizeTemplate />} />
             </Route>
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
